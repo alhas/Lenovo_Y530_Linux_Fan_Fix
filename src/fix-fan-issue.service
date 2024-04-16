@@ -1,0 +1,12 @@
+[Unit]
+Description=Fix Fan Issue Lenovo Y530
+
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/local/bin/fix_fan_issue.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,4 +1,4 @@
-I want to have a program that control the fan of y530.
+freeze_fanI want to have a program that control the fan of y530.
 If fan below 50C fan should freeze current state.
 If fan over 50C fan should run automatically.
 That way I will prevent fan kicking issue.
@@ -15,3 +15,29 @@ while True:
 Check if ec_probe is installed. If not Install it.
 
 Make the program a service. Which should start at startup.
+
+
+--Pseudo code--
+
+run ./check_ec_probe.sh
+cp fix-fan-issue.sh /usr/local/bin
+cp fix-fan-issue.service /etc/systemd/system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
